@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrap{
+    width: 100vw;
+    height: 100vh;
+    background-color: cadetblue;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sq{
+    width: 200px;
+    height: 200px;
+    background-color: crimson;
+    border: solid 5px black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    font-size: 30px;
+    animation-name: anim;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anim{
+    0%{
+        transform: rotate(0deg);
+        background-color: crimson;
+    }
+    15%{
+        transform: rotate(90deg);
+        background-color: rgb(177, 29, 29);
+    }
+    25%{
+        transform: rotate(90deg);
+        background-color: rgb(202, 69, 69);
+    }
+    40%{
+        transform: rotate(180deg);
+        background-color: rgb(246, 51, 2);
+    }
+    55%{
+        transform: rotate(180deg);
+        background-color: rgb(212, 91, 61);
+    }
+    65%{
+        transform: rotate(270deg);
+        background-color: rgb(143, 32, 5);
+    }
+    75%{
+        transform: rotate(270deg);
+        background-color: rgb(246, 128, 98);
+    }
+    90%{
+        transform: rotate(360deg);
+        background-color: rgb(190, 47, 11);
+    }
+    100%{
+        transform: rotate(360deg);
+        background-color: rgb(246, 51, 2);
+    }
+    
+}
